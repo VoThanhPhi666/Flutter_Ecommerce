@@ -72,10 +72,11 @@ class Page1 extends StatelessWidget {
     return Stack(fit: StackFit.expand, children: [
       Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Colors.blueAccent, Colors.blueGrey]),
+          color: Colors.white,
+          // gradient: LinearGradient(
+          //     begin: Alignment.topLeft,
+          //     end: Alignment.bottomRight,
+          //     colors: [Colors.blueAccent, Colors.blueGrey]),
         ),
         child: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -120,7 +121,7 @@ class Page1 extends StatelessWidget {
                   "Next",
                   style: TextStyle(
                       fontSize: 25,
-                      color: Colors.pink,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -163,12 +164,12 @@ class Page2State extends State<Page2> with TickerProviderStateMixin {
             ),
           ],
         )),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Colors.blueAccent, Colors.blueGrey]),
-        ),
+        decoration: BoxDecoration(color: Colors.white
+            // gradient: LinearGradient(
+            //     begin: Alignment.topLeft,
+            //     end: Alignment.bottomRight,
+            //     colors: [Colors.blueAccent, Colors.blueGrey]),
+            ),
       ),
       Positioned(
         right: MediaQuery.of(context).size.width / 10,
@@ -189,7 +190,7 @@ class Page2State extends State<Page2> with TickerProviderStateMixin {
                   "Login",
                   style: TextStyle(
                       fontSize: 25,
-                      color: Colors.pink,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
               ),

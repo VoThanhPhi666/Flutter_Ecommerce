@@ -1,7 +1,6 @@
 import 'package:ecommerce_application/Screen/MainPage.dart';
 import 'package:ecommerce_application/Screen/RegisterDialog.dart';
 import 'package:ecommerce_application/View/CustomTextField.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -22,10 +21,11 @@ class LoginPageState extends State<LoginPage> {
             child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          child: Image.asset(
-            "lib/Asset/Images/background4.png",
-            fit: BoxFit.cover,
-          ),
+          decoration: BoxDecoration(color: Colors.blue),
+          // child: Image.asset(
+          //   "lib/Asset/Images/background4.png",
+          //   fit: BoxFit.cover,
+          // ),
         )),
         Positioned(
           top: 0,
@@ -37,7 +37,7 @@ class LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(120),
                     bottomRight: Radius.circular(120)),
-                color: Colors.grey),
+                color: Colors.white),
           ),
         ),
         Positioned(
@@ -49,16 +49,15 @@ class LoginPageState extends State<LoginPage> {
               width: MediaQuery.of(context).size.width / 4,
               height: MediaQuery.of(context).size.width / 4,
               child: Center(
-                child: Text(
-                  "Login",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                      decoration: TextDecoration.none),
+                child: Icon(
+                  Icons.person_outline,
+                  size: 40,
                 ),
               ),
               decoration: BoxDecoration(
-                  color: Colors.pink, borderRadius: BorderRadius.circular(50)),
+                  border: Border.all(color: Colors.blue, width: 2),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(50)),
             ),
           ),
         ),
@@ -141,7 +140,7 @@ class LoginPageState extends State<LoginPage> {
                                 fontWeight: FontWeight.bold,
                                 decoration: TextDecoration.none,
                                 fontSize: 15,
-                                color: Colors.blue),
+                                color: Colors.white),
                           ),
                         )
                       ],
@@ -155,7 +154,7 @@ class LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.none,
                           fontSize: 15,
-                          color: Colors.blue),
+                          color: Colors.white),
                     ),
                   ),
                   Padding(
